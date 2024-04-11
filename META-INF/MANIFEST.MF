@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: languageStay.application.App
+Class-Path: lib/jgrapht-core-1.5.1.jar lib/sae2_02.jar lib/javafx-sdk-20.0.1/lib/javafx.base.jar lib/javafx-sdk-20.0.1/lib/javafx.controls.jar lib/javafx-sdk-20.0.1/lib/javafx.fxml.jar lib/javafx-sdk-20.0.1/lib/javafx.graphics.jar lib/javafx-sdk-20.0.1/lib/javafx.media.jar lib/javafx-sdk-20.0.1/lib/javafx.swing.jar lib/javafx-sdk-20.0.1/lib/javafx.web.jar
+module-path: lib/javafx-sdk-20.0.1/lib
+add-modules: javafx.controls,javafx.fxml,javafx.graphics

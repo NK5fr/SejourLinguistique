@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="936.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="languageStay.application.AppController">
+   <center>
+      <BorderPane prefHeight="764.0" prefWidth="801.0">
+         <center>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="842.0" prefWidth="784.0" spacing="30.0" style="-fx-padding: 20px;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="appariementsTitle" text="Liste des appariements">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="ListeApp" onMouseClicked="#appListClicked" prefHeight="379.0" prefWidth="744.0" />
+                  <HBox>
+                     <children>
+                        <Label fx:id="appInfos">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="179.0" spacing="70.0">
+                     <children>
+                        <Button fx:id="newAppBtn" mnemonicParsing="false" onAction="#pressedNewApp" prefHeight="24.0" prefWidth="185.0" style="-fx-background-color: #182e52;" text="Nouveau" textFill="WHITE" />
+                        <Button fx:id="eviterAppBtn" mnemonicParsing="false" onAction="#pressedEviterApp" prefHeight="24.0" prefWidth="192.0" style="-fx-background-color: #182e52;" text="Éviter" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#pressedRefresh" prefHeight="24.0" prefWidth="192.0" style="-fx-background-color: #182e52;" text="Tout régénérer" textFill="WHITE" />
+                  <HBox alignment="CENTER" prefHeight="28.0" prefWidth="700.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="350.0">
+                           <children>
+                              <Button fx:id="homeBtn" mnemonicParsing="false" onMouseClicked="#pressedHome" style="-fx-background-color: #182e52;" text="Accueil" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="372.0">
+                           <children>
+                              <Button fx:id="retour" mnemonicParsing="false" onAction="#pressedDashboard" onMouseClicked="#pressedHome" style="-fx-background-color: #182e52;" text="Retour" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

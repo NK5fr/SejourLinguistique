@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="languageStay.application.AppController">
+   <center>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="773.0" spacing="30.0" style="-fx-padding: 20px;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Liste des participants">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <VBox spacing="10.0">
+               <children>
+                  <ListView fx:id="ListeTeen" prefHeight="336.0" prefWidth="733.0" />
+                  <HBox alignment="CENTER" prefHeight="40.0" prefWidth="733.0" spacing="50.0">
+                     <children>
+                        <HBox prefHeight="16.0" prefWidth="118.0">
+                           <children>
+                              <Label prefHeight="16.0" prefWidth="81.0" text="FRANCE" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="CptFrance" textFill="#686868">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="101.0">
+                           <children>
+                              <Label prefHeight="16.0" prefWidth="64.0" text="SPAIN" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="CptSpain" textFill="#686868">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="130.0">
+                           <children>
+                              <Label prefHeight="16.0" prefWidth="90.0" text="GERMANY" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="CptGermany" textFill="#686868">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="101.0">
+                           <children>
+                              <Label prefHeight="16.0" prefWidth="56.0" text="ITALY" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="CptItaly" prefHeight="16.0" prefWidth="36.0" textFill="#686868">
+                                 <font>
+                                    <Font name="System Italic" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="733.0" />
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="733.0" spacing="50.0">
+               <children>
+                  <Button fx:id="addTeenagerButton" mnemonicParsing="false" onAction="#pressedAddTeenager" prefHeight="24.0" prefWidth="185.0" style="-fx-background-color: #182e52;" text="Nouveau" textFill="WHITE" />
+                  <Button fx:id="EditTeen" mnemonicParsing="false" onAction="#editTeenager" prefHeight="24.0" prefWidth="185.0" style="-fx-background-color: #182e52;" text="Modifier/Visualiser" textFill="WHITE" />
+                  <Button fx:id="DelTeen" mnemonicParsing="false" onAction="#delTeenager" prefHeight="24.0" prefWidth="192.0" style="-fx-background-color: #182e52;" text="Supprimer" textFill="WHITE" />
+               </children>
+            </HBox>
+            <Button fx:id="multSuppr" mnemonicParsing="false" onAction="#pressedMultSuppr" prefHeight="24.0" prefWidth="192.0" style="-fx-background-color: #182e52;" text="Suppression multiple" textFill="WHITE" />
+            <HBox alignment="CENTER" prefHeight="28.0" prefWidth="700.0">
+               <children>
+                  <HBox prefHeight="28.0" prefWidth="350.0">
+                     <children>
+                        <Button fx:id="homeBtn" mnemonicParsing="false" onMouseClicked="#pressedHome" style="-fx-background-color: #182e52;" text="Accueil" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_RIGHT" prefHeight="28.0" prefWidth="372.0">
+                     <children>
+                        <Button fx:id="retour" mnemonicParsing="false" onAction="#pressedDashboard" onMouseClicked="#pressedHome" style="-fx-background-color: #182e52;" text="Retour" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

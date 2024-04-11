@@ -1,0 +1,7 @@
+src/languageStay/Doc/*
+doc/
+data/*
+res/*.bin
+res/plateformIhm
+/.metadata/
+bin/
